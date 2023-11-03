@@ -14,4 +14,6 @@ RUN npm i -D handlebars@4.5.0
 
 EXPOSE 4000
 
+EXPOSE 27017
+
 CMD node index.js
