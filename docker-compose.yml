@@ -1,17 +1,17 @@
-services:
-  mongodb:
-    privileged: true
-    image: mongo:5.0.2
-    container_name: mongodb
-    ports:
-      - 27017:27017
-    volumes:
-      - ./data/db:/data/db
-  app:
-    privileged: true
-    depends_on:
-      - mongodb
-    build: .
-    ports:
-      - 4000:4000
-    restart: always
+# services:
+#   mongodb:
+#     privileged: true
+#     image: mongo:5.0.2
+#     container_name: mongodb
+#     ports:
+#       - 27017:27017
+#     volumes:
+#       - ./data/db:/data/db
+#   app:
+#     privileged: true
+#     depends_on:
+#       - mongodb
+#     build: .
+#     ports:
+#       - 4000:4000
+#     restart: always
